@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: arkade-api-config
+  labels:
+    app: arkade-api
+data:
+  ASPNETCORE_ENVIRONMENT: "Production"
+  TempDirectory: "/app/temp"
+  Logging__LogLevel__Default: "Information"
+  Logging__LogLevel__Microsoft: "Warning"
+  Logging__LogLevel__Microsoft.Hosting.Lifetime: "Information"
